@@ -1,20 +1,6 @@
 ## Despliegue de Recursos en Clúster de Kubernetes (Minikube) con Terraform
 
-Este documento detalla los pasos necesarios para desplegar recursos en un clúster de Kubernetes utilizando Minikube y Terraform. A continuación, se explicará cómo configurar el entorno, qué hacen los archivos de configuración y los comandos esenciales para gestionar la infraestructura.
-
-### 1. Explicación y Proceso
-
-#### Qué es Terraform y Kubernetes
-
-**Terraform** es una herramienta de infraestructura como código (IaC) que permite definir y gestionar la infraestructura de forma declarativa. Permite automatizar el aprovisionamiento de recursos en diferentes proveedores de nube y plataformas.
-
-**Kubernetes** es un sistema de orquestación de contenedores de código abierto que facilita la automatización del despliegue, la escalabilidad y la gestión de aplicaciones en contenedores.
-
-#### Despliegue con Terraform y Minikube
-
-En este caso, utilizaremos **Minikube**, que es una solución local de Kubernetes, ideal para desarrollo y pruebas en entornos locales o de una sola máquina.
-
-### 2. Explicación de Archivos de Configuración
+### 1. Explicación de Archivos de Configuración
 
 #### Archivo `k8s.tf`
 
@@ -100,7 +86,7 @@ provider "kubernetes" {
 - **`required_providers`**: Define la versión del proveedor de Kubernetes que se utilizará en este proyecto.
 - **`provider "kubernetes"`**: Configura el proveedor de Kubernetes para que Terraform pueda interactuar con el clúster de Minikube utilizando el contexto `minikube`.
 
-### 3. Comandos Utilizados y Explicación
+### 2. Comandos Utilizados y Explicación
 
 #### Comandos de Terraform
 
